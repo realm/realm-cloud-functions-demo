@@ -1,0 +1,14 @@
+sync:
+  featureToken: *token goes here*
+service:
+  type: NodePort
+  nodePort: 30080
+prometheus:
+  enabled: true
+grafana:
+
+  enabled: true
+  service:
+    type: NodePort
+    nodePort: 30081
+
