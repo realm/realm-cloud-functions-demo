@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="IBMPlexSans-Regular.ttf">
+            <string>IBMPlexSans</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="realm_openwhisk_poc" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="bMT-zh-oCv">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wsj-mi-Bzd">
+                                <rect key="frame" x="29" y="600" width="316" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="PYH-yk-keT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="17"/>
+                                <state key="normal" title="Find Hotels">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="checkInButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="s1x-8T-4f4"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Ip-8F-RJz">
+                                <rect key="frame" x="16" y="34" width="343" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Pfg-cQ-06h">
+                                        <rect key="frame" x="13" y="0.0" width="316" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Pfg-cQ-06h" secondAttribute="trailing" constant="14" id="VVB-1X-LUi"/>
+                                    <constraint firstItem="Pfg-cQ-06h" firstAttribute="leading" secondItem="2Ip-8F-RJz" secondAttribute="leading" constant="13" id="mhP-g8-Tdx"/>
+                                    <constraint firstItem="Pfg-cQ-06h" firstAttribute="top" secondItem="2Ip-8F-RJz" secondAttribute="top" id="oPj-fy-oZS"/>
+                                    <constraint firstAttribute="height" constant="60" id="qeh-kK-Kjr"/>
+                                    <constraint firstAttribute="bottom" secondItem="Pfg-cQ-06h" secondAttribute="bottom" id="rKn-mI-ulh"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5j-Rn-aeS">
+                                <rect key="frame" x="315" y="103" width="44" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="NHD-OR-oNM"/>
+                                    <constraint firstAttribute="height" constant="44" id="qjf-Oy-fNN"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="resetButton"/>
+                                <connections>
+                                    <action selector="resetButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="ssB-kS-W2e"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="T5j-Rn-aeS" secondAttribute="trailing" constant="16" id="41O-UO-8BE"/>
+                            <constraint firstItem="bMT-zh-oCv" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="AFX-Yn-4ns"/>
+                            <constraint firstItem="wsj-mi-Bzd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="29" id="Bu5-BU-ryi"/>
+                            <constraint firstItem="bMT-zh-oCv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Hbn-Ob-xWm"/>
+                            <constraint firstItem="2Ip-8F-RJz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="14" id="NIv-Fk-Z2w"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Ip-8F-RJz" secondAttribute="trailing" constant="16" id="U6X-c7-rQh"/>
+                            <constraint firstItem="bMT-zh-oCv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="U7f-ee-mLJ"/>
+                            <constraint firstItem="bMT-zh-oCv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="V9J-gt-cmt"/>
+                            <constraint firstItem="2Ip-8F-RJz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="WrS-b0-XhU"/>
+                            <constraint firstItem="T5j-Rn-aeS" firstAttribute="top" secondItem="2Ip-8F-RJz" secondAttribute="bottom" constant="9" id="igy-rW-ouE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wsj-mi-Bzd" secondAttribute="trailing" constant="30" id="nAA-w0-Xan"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wsj-mi-Bzd" secondAttribute="bottom" constant="20" id="pWe-oY-bGC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="checkInButton" destination="wsj-mi-Bzd" id="xtq-Go-WjO"/>
+                        <outlet property="mapView" destination="bMT-zh-oCv" id="XA5-Y5-FkR"/>
+                        <outlet property="resetButton" destination="T5j-Rn-aeS" id="vrj-bK-vlf"/>
+                        <outlet property="statusLabel" destination="Pfg-cQ-06h" id="e4T-k4-0lI"/>
+                        <outlet property="statusView" destination="2Ip-8F-RJz" id="aXC-r4-Lut"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="resetButton" width="512" height="512"/>
+    </resources>
+</document>
