@@ -12,7 +12,7 @@ The purpose of this application is to demonstrate that Swift developers do not n
 
 ### Scenario
 
-Let's assume you are visiting a new city wherespe you don't easily have network connectivity. You finally get to your hotel, and you log onto wifi. The mobile app in this repository allows you to find your hotel via GPS, and get restaurant recommendations nearby. As you check into your hotel, you use the app to find your hotel, and you get 30 restaurant recommendations populated on your map.
+Let's assume you are visiting a new city where you don't easily have network connectivity. You finally get to your hotel, and you log onto wifi. The mobile app in this repository allows you to find your hotel via GPS, and get restaurant recommendations nearby. As you check into your hotel, you use the app to find your hotel, and you get 30 restaurant recommendations populated on your map.
 
 Imagine that a year passes. You come back to visit, and you check into the same hotel, but their wifi is down. Thankfully, even with zero network connectivity, the app lets you find the hotel near you, and even see restaurants that were in the area the last time you were there. Suddenly, the hotel wifi comes alive, and you connect. The app will refresh the restaurants for you without you having to do anything on the app. 
 
