@@ -4,6 +4,12 @@ This is a repository of a proof-of-concept application stack meant to show how I
 
 The purpose of this application is to demonstrate that Swift developers do not need to learn a new programming language just to write cloud functionality.
 
+<p align="center">
+	<a href="https://www.youtube.com/watch?v=sBZ7usARlX4" target="_blank">
+		<img src="https://img.youtube.com/vi/sBZ7usARlX4/0.jpg">
+	</a>
+</p>
+
 ### Scenario
 
 Let's assume you are visiting a new city wherespe you don't easily have network connectivity. You finally get to your hotel, and you log onto wifi. The mobile app in this repository allows you to find your hotel via GPS, and get restaurant recommendations nearby. As you check into your hotel, you use the app to find your hotel, and you get 30 restaurant recommendations populated on your map.
