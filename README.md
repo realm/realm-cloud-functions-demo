@@ -133,7 +133,7 @@ You can run this application in a simulator, but this is best run on an iOS devi
 
 ### Credits
 
-- [Ian Ward](ian.ward@realm.io)
-- [Matt Geerling](matt.geerling@realm.io)
-- [David Okun](david.okun@ibm.com)
-- [Chris Bailey](baileyc@uk.ibm.com)
+- [Ian Ward](mailto:ian.ward@realm.io)
+- [Matt Geerling](mailto:matt.geerling@realm.io)
+- [David Okun](https://twitter.com/dokun24)
+- [Chris Bailey](https://twitter.com/Chris__Bailey)
