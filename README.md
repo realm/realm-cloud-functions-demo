@@ -1,3 +1,7 @@
+# DEPRECATED
+With the introduction of [MongoDB Realm](https://www.mongodb.com/realm), this project is **deprecated**. Please use [MongoDB Realm Cloud](https://docs.mongodb.com/realm/).
+
+-----
 ## Realm Cloud Functions - Proof of Concept
 
 This is a repository of a proof-of-concept application stack meant to show how IBM Cloud Functions can extend the functionality of Realm Object Server. This features a cloud function written in Swift that can be triggered whenever new data is injected into Realm Object Server.
